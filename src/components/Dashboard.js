@@ -23,7 +23,7 @@ function Dashboard(props) {
                                             <div class="col mr-2">
                                                 <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                                     Earnings (Monthly)</div>
-                                                <div class="h5 mb-0 font-weight-bold text-gray-800">${props.data.earning}</div>
+                                                <div class="h5 mb-0 font-weight-bold text-gray-800">₹{props.data.earning}</div>
                                             </div>
                                             <div class="col-auto">
                                                 <i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -40,7 +40,7 @@ function Dashboard(props) {
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                                 Earnings (Annual)</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">${props.data.annual}</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">₹{props.data.annual}</div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
@@ -55,11 +55,11 @@ function Dashboard(props) {
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">No of students
                                             </div>
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{props.data.task}%</div>
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{props.data.task}</div>
                                                 </div>
                                                 <div class="col">
                                                     <div class="progress progress-sm mr-2">
@@ -85,7 +85,7 @@ function Dashboard(props) {
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                Pending Requests</div>
+                                                no of staffs</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">{props.data.pending}</div>
                                         </div>
                                         <div class="col-auto">

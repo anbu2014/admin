@@ -10,8 +10,8 @@ function App() {
   let data = {
     earning: "40,000",
     annual: "2,40,000",
-    task: 20,
-    pending: 26,
+    task: 2000,
+    pending: 56,
   };
 
   let [students, setStudents] = useState([
@@ -49,8 +49,7 @@ function App() {
                 <Routes>
                   <Route
                     path="/dashboard"
-                    element={<Dashboard data={data} />}
-                  />
+                    element={<Dashboard data={data} />}/>
                   <Route
                     path="/all-students"
                     element={<AllStudents data={{ students, setStudents }} />}
